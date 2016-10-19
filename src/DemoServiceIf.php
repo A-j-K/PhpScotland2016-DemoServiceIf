@@ -2,25 +2,13 @@
 
 namespace PhpScotland2016\DemoServiceIf;
 
-class Request extends \Yaf_Request_Http
-{
-}
-
-class JsonResponse extends \Yaf_Response_Abstract 
-{
-	public function __construct() {
-		parent::__construct();
-		$this->setHeader('Content-Type', 'application/json');
-	}
-}
-
 interface DemoServiceIf
 {
 	/**
 	 * Handle the incoming request.
-	 * @param PhpScotland2016\DemoServiceIf\Request
-	 * @return PhpScotland2016\DemoServiceIf\JsonResponse
+	 * @param \Yaf_Request_Http
+	 * @return \Yaf_Response_Abstract
 	 */
-	public function handleRequest(Request request);
+	public function handleRequest(\Yaf_Request_Http request);
 }
 
