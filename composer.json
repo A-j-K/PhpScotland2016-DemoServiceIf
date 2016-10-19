@@ -12,9 +12,9 @@
 	"require": {},
 	"require-dev": {},
 	"autoload": {
-		"psr-4": {
-			"PhpScotland2016\\DemoServiceIf\\": "src"
-		}
+		"classmap": [
+			"src/"
+		]
 	}
 }
 
