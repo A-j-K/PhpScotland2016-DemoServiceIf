@@ -1,0 +1,20 @@
+{
+	"name": "PhpScotland2016/DemoServiceIf",
+	"description": "Interface for the DemoService service",
+	"license": "PHP",
+	"keywords": ["phpscotland", "phpscotland2016"],
+	"authors": [
+		{
+			"name": "Andy Kirkham",
+			"email": "andy@spiders-lair.com"
+		}
+	],
+	"require": {},
+	"require-dev": {},
+	"autoload": {
+		"psr-4": {
+			"PhpScotland2016\\DemoServiceIf\\": "src"
+		}
+	}
+}
+
