@@ -1,5 +1,5 @@
 {
-	"name": "PhpScotland2016/DemoServiceIf",
+	"name": "PhpScotland2016/DemoServiceInterface",
 	"description": "Interface for the DemoService service",
 	"license": "PHP",
 	"keywords": ["phpscotland", "phpscotland2016"],
@@ -12,7 +12,7 @@
 	"require": {},
 	"require-dev": {},
 	"autoload": {
-		"psr-4": { "PhpScotland2016\\DemoServiceIf\\": "" }
+		"psr-4": { "PhpScotland2016\\Demo\\Service\\Interfaces\\": "" }
 	}
 }
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace PhpScotland2016\DemoServiceIf\DemoServiceIf;
+namespace PhpScotland2016\Demo\Service\Interfaces;
 
 interface DemoServiceIf
 {
