@@ -6,9 +6,9 @@ class DemoServiceResponse extends \Yaf_Response_Abstract
 {
 	public function __construct($json = "{}") {
 		parent::__construct();
-		$this->_header = array();
+		$this->setHeader("Content-Type", "application/json");
 		if(is_array($json)) {
-			$this->setBodyFromArray($json);
+			$this->setFromArray($json);
 		}
 		else {
 			$this->setBody($json);
@@ -24,7 +24,6 @@ class DemoServiceResponse extends \Yaf_Response_Abstract
 		if(array_key_exists($header, $this->_header)) {
 			return $this->_header[$header];
 		}
-		return null;
 	}
 
 	public function getHeaders() {
@@ -35,11 +34,11 @@ class DemoServiceResponse extends \Yaf_Response_Abstract
 		return $this->getBody();
 	}
 
-	public function getBodyAsArray() {
+	public function getArray() {
 		return json_decode($this->getBody(), true);
 	}
 
-	public function setBodyFromArray(array $arr) {
+	public function setFromArray(array $arr) {
 		$this->setBody(json_encode($arr, JSON_FORCE_OBJECT));
 	}
 }
