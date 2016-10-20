@@ -2,7 +2,7 @@
 
 namespace PhpScotland2016\Demo\Service\Interfaces;
 
-interface DemoServiceIf
+interface DemoServiceInterface
 {
 	/**
 	 * Handle the incoming request.
