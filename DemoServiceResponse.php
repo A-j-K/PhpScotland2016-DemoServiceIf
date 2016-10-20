@@ -9,7 +9,7 @@ class DemoServiceResponse extends \Yaf_Response_Abstract
 		$this->_header = array();
 		if(is_array($json)) {
 			$this->setBodyFromArray($json);
-		{
+		}
 		else {
 			$this->setBody($json);
 		}
