@@ -6,8 +6,8 @@ interface DemoServiceInterface
 {
 	/**
 	 * Handle the incoming request.
-	 * @param \Yaf_Request_Http
-	 * @return \Yaf_Response_Abstract
+	 * @param PhpScotland2016\Demo\Service\Interfaces\DemoServiceRequest
+	 * @return PhpScotland2016\Demo\Service\Interfaces\DemoServiceResponse
 	 */
 	public function handleRequest(\Yaf_Request_Http $request);
 }
