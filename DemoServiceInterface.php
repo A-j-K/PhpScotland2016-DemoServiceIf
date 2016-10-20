@@ -9,6 +9,6 @@ interface DemoServiceInterface
 	 * @param PhpScotland2016\Demo\Service\Interfaces\DemoServiceRequest
 	 * @return PhpScotland2016\Demo\Service\Interfaces\DemoServiceResponse
 	 */
-	public function handleRequest(\Yaf_Request_Http $request);
+	public function handleRequest(DemoServiceRequest $request);
 }
 
