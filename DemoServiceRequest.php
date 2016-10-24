@@ -16,6 +16,7 @@ class DemoServiceRequest
 		$this->_message = $in;
 		return $this;
 	}
+
 	public function getParam($name, $default) {
 		$arr = json_decode($this->_message, true);
 		if(is_array($arr) && array_key_exists($name, $arr)) {
@@ -23,5 +24,10 @@ class DemoServiceRequest
 		}
 		return $default;
 	}
+
+	public function getAsArray() {
+		return json_decode($this->_message, true);
+	}
+
 }
 
