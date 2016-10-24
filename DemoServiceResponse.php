@@ -1,7 +1,6 @@
 <?php
 namespace PhpScotland2016\Demo\Service\Interfaces;
-use PhpScotland2016\Demo\Service\Interfaces\DemoServiceResponseInterface;
-class DemoServiceResponse implements DemoServiceResponseInterface
+class DemoServiceResponse
 {
     protected $_message = [];
     public function __construct($json = "{}") {

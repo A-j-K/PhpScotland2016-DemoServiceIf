@@ -1,7 +1,6 @@
 <?php
 namespace PhpScotland2016\Demo\Service\Interfaces;
-use PhpScotland2016\Demo\Service\Interfaces\DemoServiceRequestInterface;
-class DemoServiceRequest implements DemoServiceRequestInterface
+class DemoServiceRequest
 {
     protected $_message = [];
     public function __construct($in = "{}") {
