@@ -1,6 +1,6 @@
 <?php
 namespace PhpScotland2016\Demo\Service\Interfaces;
-
+use PhpScotland2016\Demo\Service\Interfaces\DemoServiceRequestInterface;
 class DemoServiceRequest implements DemoServiceRequestInterface
 {
     protected $_message = [];
