@@ -1,45 +1,24 @@
 <?php
-
 namespace PhpScotland2016\Demo\Service\Interfaces;
-
-class DemoServiceResponse extends \Yaf_Response_Abstract
+class DemoServiceResponse
 {
+	protected $_message = "";
+
 	public function __construct($json = "{}") {
-		parent::__construct();
-		$this->setHeader("Content-Type", "application/json");
 		if(is_array($json)) {
 			$this->setFromArray($json);
 		}
 		else {
-			$this->setBody($json);
+			$this->_message = $json;
 		}
 	}
-
-	public function setHeader($header, $value) {
-		$this->_header[$header] = $value;
-		return $this;
-	}
-
-	public function getHeader($header) {
-		if(array_key_exists($header, $this->_header)) {
-			return $this->_header[$header];
-		}
-	}
-
-	public function getHeaders() {
-		return $this->_header;
-	}
-
 	public function getJson() {
-		return $this->getBody();
+		return $this->_message;
 	}
-
 	public function getArray() {
-		return json_decode($this->getBody(), true);
+		return json_decode($this->_message, true);
 	}
-
 	public function setFromArray(array $arr) {
-		$this->setBody(json_encode($arr, JSON_FORCE_OBJECT));
+		$this->_message = json_encode($arr, JSON_FORCE_OBJECT);
 	}
 }
-

@@ -1,7 +1,5 @@
 <?php
-
 namespace PhpScotland2016\Demo\Service\Interfaces;
-
 interface DemoServiceInterface
 {
 	/**
