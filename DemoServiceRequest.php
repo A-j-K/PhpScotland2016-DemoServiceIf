@@ -23,9 +23,6 @@ class DemoServiceRequest
     }
     public function setParam($name, $value) {
         $this->_message[$name] = $value;
-	$arr = json_decode($this->_message, true);
-        $arr[$name] = $value;
-        $this->_message = json_encode($arr, JSON_FORCE_OBJECT);
 	return $this;
     }        
     public function getParam($name, $default) {
